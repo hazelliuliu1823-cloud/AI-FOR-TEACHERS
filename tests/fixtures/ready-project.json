@@ -1,0 +1,762 @@
+{
+  "action-node-candidates.csv": {
+    "headers": [
+      "candidate_id",
+      "stage",
+      "source_id",
+      "episode",
+      "scene_id",
+      "trigger_frame_id",
+      "candidate_start_frame_ref",
+      "candidate_end_frame_ref",
+      "center_timestamp_ms",
+      "display_timecode",
+      "trigger_reason",
+      "change_signal",
+      "motif_tags",
+      "window_start_ms",
+      "window_end_ms",
+      "sampling_fps",
+      "actor",
+      "action_description",
+      "response_description",
+      "outcome_description",
+      "min_effective_unit_start_ms",
+      "min_effective_unit_end_ms",
+      "min_effective_unit_status",
+      "lip_sync_check",
+      "relationship_turn_signal",
+      "question_refs",
+      "speaker_adjudication_refs",
+      "topic_judgment",
+      "confidence",
+      "confidence_basis",
+      "evidence_refs",
+      "verification_status",
+      "unknowns",
+      "review_refs",
+      "sampling_exception_reason"
+    ],
+    "rows": []
+  },
+  "content-map.md": "# Synthetic content map\nS001 -> frame:F001; SRC001 0-20000.\n",
+  "coverage.json": [
+    {
+      "source_id": "SRC001",
+      "start_ms": 0,
+      "end_ms": 20000,
+      "modality": "visual_sample",
+      "method": "synthetic controlled fixture",
+      "status": "complete",
+      "evidence_file": "synthetic-only",
+      "reason": "fixture for static tests"
+    },
+    {
+      "source_id": "SRC001",
+      "start_ms": 0,
+      "end_ms": 20000,
+      "modality": "transcript",
+      "method": "synthetic controlled fixture",
+      "status": "complete",
+      "evidence_file": "synthetic-only",
+      "reason": "fixture for static tests"
+    }
+  ],
+  "deep-observations.csv": {
+    "headers": [
+      "observation_id",
+      "detail_interval_id",
+      "plan_node_id",
+      "source_id",
+      "episode",
+      "start_ms",
+      "end_ms",
+      "display_range",
+      "scene_id",
+      "unit_id",
+      "representative_frame_refs",
+      "frame_observation_refs",
+      "visual_facts",
+      "shot_composition",
+      "action_chain",
+      "key_visual_changes",
+      "observed_emotional_cues",
+      "emotional_interpretation",
+      "expression_gaze",
+      "spatial_relationship",
+      "setting_context",
+      "narrative_context",
+      "motif_tags",
+      "content_description",
+      "hard_subtitle_notes",
+      "original_audio_keypoints",
+      "audio_verification_status",
+      "subtitle_asr_conflicts",
+      "dialogue_audio",
+      "speaker_adjudication_refs",
+      "before_state",
+      "after_state",
+      "question_refs",
+      "topic_judgment",
+      "confidence",
+      "confidence_basis",
+      "interpretations",
+      "unknowns",
+      "unverified_items",
+      "evidence_status",
+      "counterevidence",
+      "context_ranges",
+      "protected_ranges",
+      "min_effective_unit_candidate",
+      "isolated_use_risk",
+      "review_refs",
+      "narrative_function",
+      "edit_note",
+      "source_signature",
+      "time_mapping_digest"
+    ],
+    "rows": [
+      {
+        "observation_id": "DO001",
+        "detail_interval_id": "DI001",
+        "plan_node_id": "P01",
+        "source_id": "SRC001",
+        "episode": "",
+        "start_ms": "0",
+        "end_ms": "8000",
+        "display_range": "00:00:00.000-00:00:08.000",
+        "scene_id": "S001",
+        "unit_id": "U001",
+        "representative_frame_refs": "frame:F001",
+        "frame_observation_refs": "frame:F001",
+        "visual_facts": "Synthetic controlled scene",
+        "shot_composition": "unknown",
+        "action_chain": "unknown",
+        "key_visual_changes": "unknown",
+        "observed_emotional_cues": "unknown",
+        "emotional_interpretation": "unknown",
+        "expression_gaze": "unknown",
+        "spatial_relationship": "unknown",
+        "setting_context": "unknown",
+        "narrative_context": "unknown",
+        "motif_tags": "none",
+        "content_description": "unknown",
+        "hard_subtitle_notes": "none",
+        "original_audio_keypoints": "Synthetic full expression",
+        "audio_verification_status": "audio_verified",
+        "subtitle_asr_conflicts": "unknown",
+        "dialogue_audio": "unknown",
+        "speaker_adjudication_refs": "none",
+        "before_state": "unknown",
+        "after_state": "unknown",
+        "question_refs": "none",
+        "topic_judgment": "unknown",
+        "confidence": "pending",
+        "confidence_basis": "insufficient_evidence",
+        "interpretations": "none",
+        "unknowns": "none",
+        "unverified_items": "none",
+        "evidence_status": "supported",
+        "counterevidence": "none",
+        "context_ranges": "unknown",
+        "protected_ranges": "unknown",
+        "min_effective_unit_candidate": "unknown",
+        "isolated_use_risk": "unknown",
+        "review_refs": "R001",
+        "narrative_function": "unknown",
+        "edit_note": "none",
+        "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+        "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b"
+      }
+    ]
+  },
+  "detail-intervals.csv": {
+    "headers": [
+      "detail_interval_id",
+      "plan_node_id",
+      "source_id",
+      "episode",
+      "start_ms",
+      "end_ms",
+      "display_range",
+      "scene_id",
+      "entry_reason",
+      "source_of_selection",
+      "preceding_context",
+      "current_background",
+      "following_context",
+      "content_summary",
+      "target_questions",
+      "topic_relevance",
+      "frame_window_policy",
+      "evidence_refs",
+      "unknowns",
+      "review_refs"
+    ],
+    "rows": [
+      {
+        "detail_interval_id": "DI001",
+        "plan_node_id": "P01",
+        "source_id": "SRC001",
+        "episode": "",
+        "start_ms": "0",
+        "end_ms": "8000",
+        "display_range": "00:00:00.000-00:00:08.000",
+        "scene_id": "S001",
+        "entry_reason": "P01 complete synthetic scene",
+        "source_of_selection": "content-map:S001",
+        "preceding_context": "unknown",
+        "current_background": "unknown",
+        "following_context": "unknown",
+        "content_summary": "Synthetic expression",
+        "target_questions": "Q001",
+        "topic_relevance": "待核实",
+        "frame_window_policy": "关键动作节点默认4fps，连续音画用于最终裁决",
+        "evidence_refs": "scene:S001",
+        "unknowns": "unknown",
+        "review_refs": "none"
+      }
+    ]
+  },
+  "edit-boundaries.csv": {
+    "headers": [
+      "boundary_id",
+      "detail_interval_id",
+      "plan_node_id",
+      "source_id",
+      "unit_id",
+      "observation_refs",
+      "continuity_type",
+      "content_start_ms",
+      "content_end_ms",
+      "audio_start_ms",
+      "audio_end_ms",
+      "audio_tail_end_ms",
+      "action_start_ms",
+      "action_end_ms",
+      "reaction_or_settle_end_ms",
+      "preferred_in_ms",
+      "safe_in_start_ms",
+      "safe_in_end_ms",
+      "preferred_out_ms",
+      "safe_out_start_ms",
+      "safe_out_end_ms",
+      "must_keep_ranges",
+      "left_handle_ms",
+      "right_handle_ms",
+      "boundary_reason",
+      "cut_risk",
+      "evidence_refs",
+      "confidence",
+      "boundary_status",
+      "source_signature",
+      "time_mapping_digest",
+      "dialogue_required_range"
+    ],
+    "rows": [
+      {
+        "boundary_id": "EB001",
+        "detail_interval_id": "DI001",
+        "plan_node_id": "P01",
+        "source_id": "SRC001",
+        "unit_id": "U001",
+        "observation_refs": "DO001",
+        "continuity_type": "dialogue",
+        "content_start_ms": "1500",
+        "content_end_ms": "5500",
+        "audio_start_ms": "1300",
+        "audio_end_ms": "5500",
+        "audio_tail_end_ms": "5800",
+        "action_start_ms": "not_applicable",
+        "action_end_ms": "not_applicable",
+        "reaction_or_settle_end_ms": "not_applicable",
+        "preferred_in_ms": "1000",
+        "safe_in_start_ms": "900",
+        "safe_in_end_ms": "1200",
+        "preferred_out_ms": "6000",
+        "safe_out_start_ms": "5900",
+        "safe_out_end_ms": "6200",
+        "must_keep_ranges": "1300-5800",
+        "left_handle_ms": "500",
+        "right_handle_ms": "500",
+        "boundary_reason": "Full synthetic audio plus tail",
+        "cut_risk": "low",
+        "evidence_refs": "review:R001",
+        "confidence": "high",
+        "boundary_status": "supported",
+        "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+        "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+        "dialogue_required_range": "1300-5800"
+      }
+    ]
+  },
+  "execution-plan.md": "# Confirmed synthetic execution plan\nUse U001 once, SRC001 1000-6000; DO001, EB001. Preserve original audio, no music.\n",
+  "frame-observations.csv": {
+    "headers": [
+      "source_id",
+      "episode",
+      "timestamp_ms",
+      "frame_end_ms",
+      "display_timecode",
+      "frame_id",
+      "frame_name",
+      "sheet_id",
+      "cell_index",
+      "scene_id",
+      "characters",
+      "visual_facts",
+      "visible_action_state",
+      "observed_emotional_cues",
+      "emotional_interpretation",
+      "expression_gaze",
+      "spatial_relationship",
+      "setting_background",
+      "key_objects",
+      "motif_tags",
+      "visible_text",
+      "original_audio_keypoint",
+      "audio_verification_status",
+      "nearby_dialogue_refs",
+      "content_description",
+      "change_from_previous",
+      "topic_judgment",
+      "confidence",
+      "confidence_basis",
+      "action_node_candidate_ids",
+      "speaker_adjudication_refs",
+      "interpretations",
+      "unknowns",
+      "evidence_ref",
+      "image_ref",
+      "coverage_status"
+    ],
+    "rows": [
+      {
+        "source_id": "SRC001",
+        "episode": "",
+        "timestamp_ms": "1000",
+        "frame_end_ms": "1040",
+        "display_timecode": "00:00:01.000",
+        "frame_id": "F001",
+        "frame_name": "frame_000001",
+        "sheet_id": "",
+        "cell_index": "1",
+        "scene_id": "S001",
+        "characters": "unknown",
+        "visual_facts": "Synthetic still for controlled test",
+        "visible_action_state": "synthetic state",
+        "observed_emotional_cues": "unknown",
+        "emotional_interpretation": "unknown",
+        "expression_gaze": "unknown",
+        "spatial_relationship": "unknown",
+        "setting_background": "unknown",
+        "key_objects": "none",
+        "motif_tags": "none",
+        "visible_text": "none",
+        "original_audio_keypoint": "not_verified",
+        "audio_verification_status": "not_reviewed",
+        "nearby_dialogue_refs": "none",
+        "content_description": "Synthetic scene",
+        "change_from_previous": "not_applicable",
+        "topic_judgment": "none",
+        "confidence": "high",
+        "confidence_basis": "controlled fixture",
+        "action_node_candidate_ids": "none",
+        "speaker_adjudication_refs": "none",
+        "interpretations": "none",
+        "unknowns": "unknown",
+        "evidence_ref": "frame:F001",
+        "image_ref": "",
+        "coverage_status": "visual_sample"
+      }
+    ]
+  },
+  "frames.jsonl": [
+    {
+      "frame_id": "F001",
+      "source_id": "SRC001",
+      "timestamp_ms": 1000,
+      "image_ref": "synthetic-image",
+      "facts": [
+        "synthetic still, not actual observation"
+      ],
+      "unknowns": []
+    }
+  ],
+  "narrative-direction.md": "# Confirmed synthetic direction\nP01: show one complete scene; candidate S001, SRC001 0-8000.\n",
+  "overview.md": "# Synthetic overview\nS001: controlled fixture; not a real reviewed video.\n",
+  "project.json": {
+    "schema_version": "1.6",
+    "project_id": "synthetic-review",
+    "version": 1,
+    "goal": null,
+    "target_characters": [],
+    "experience": null,
+    "source_scope": [
+      "SRC001"
+    ],
+    "scope_policy": "prefer_same_episode",
+    "source_audio_policy": "preserve_complete_speech",
+    "target_duration_ms": null,
+    "output": {
+      "width": 320,
+      "height": 180,
+      "fps_num": 25,
+      "fps_den": 1
+    },
+    "deliverable": "detailed_plan",
+    "render_authorized": true,
+    "sampling": {
+      "overview_interval_ms": 10000,
+      "batch_target_ms": 300000,
+      "context_margin_ms": 20000,
+      "directed_start_interval_ms": 1000,
+      "action_candidate_fps": 4
+    },
+    "confirmed_constraints": [],
+    "defaults_used": [
+      "同集优先",
+      "保留完整原声",
+      "时长由必要叙事决定"
+    ],
+    "unknowns": [],
+    "current_stage": "F",
+    "audio_policy": {
+      "allow_original_music": null,
+      "preserve_dialogue": true,
+      "preserve_ambience": true
+    },
+    "render_options": {},
+    "tool_versions": {
+      "synthetic_renderer": "review-1"
+    },
+    "brief_ref": null,
+    "editorial_plan_ref": null,
+    "content_map_ref": "content-map.md",
+    "direct_policy": "external_two_pass_by_default",
+    "editorial_plan_status": "not_provided",
+    "structure_state": {
+      "broad_pass": "complete",
+      "content_map": "complete",
+      "directed_deep_pass": "complete",
+      "frame_observations": "complete",
+      "deep_observations": "complete",
+      "action_node_candidates": "complete",
+      "structure_questions": "complete",
+      "minimum_information_floor": "complete",
+      "detail_intervals": "complete",
+      "speaker_adjudications": "complete",
+      "edit_boundaries": "complete"
+    },
+    "research_context_refs": [],
+    "human_decision_refs": [],
+    "structure_policy": {
+      "minimum_information_floor": "strict",
+      "summary_cannot_replace_observations": true,
+      "explicit_empty_values": [
+        "none",
+        "unknown",
+        "not_applicable"
+      ],
+      "action_candidate_default_fps": 4,
+      "frame_detail_level": "full_observation",
+      "require_original_audio_keypoint_field": true,
+      "require_topic_judgment_field": true,
+      "require_confidence_with_basis": true,
+      "require_detail_interval_context": true,
+      "require_speaker_adjudication_artifact": true,
+      "detail_precision_target_ms": "100-500",
+      "negative_claim_policy": "not_observed_is_not_absent",
+      "evidence_conflict_policy": "resolve_by_fact_type_and_record_conflict",
+      "dialect_asr_policy": "locator_only_until_verified",
+      "long_task_checkpoint_policy": "incremental_output_resume_coverage",
+      "usable_source_bounds_must_reach_direct": true,
+      "negative_claim_dense_sampling_is_sufficient": false,
+      "negative_claim_requires_bounded_scope": true,
+      "negative_claim_requires_fact_type_continuous_or_direct_evidence": true,
+      "require_edit_boundary_artifact": true,
+      "edit_boundary_policy": "strict_safe_windows_with_explicit_override"
+    },
+    "time_policy": {
+      "canonical_source_time_key": "source_id+source_ms",
+      "canonical_unit": "ms",
+      "source_interval_semantics": "left_closed_right_open",
+      "display_timecode_is_derived": true,
+      "require_source_time_mapping": true,
+      "preserve_time_tags_across_modalities": true,
+      "execute_coordinate_spaces": [
+        "assembly",
+        "output"
+      ],
+      "track_anchor_policy": "event_anchor_plus_local_frames",
+      "time_tag_stability": "strict"
+    },
+    "execution_policy": {
+      "duration_budget_required_before_ready": true,
+      "text_overlay_not_additive_unless_structure_extended": true,
+      "feedback_invalidation_matrix": "strict",
+      "audio_narrative_role_required": true,
+      "edit_boundary_required_before_ready": true
+    },
+    "narrative_direction_ref": "narrative-direction.md",
+    "narrative_direction_status": "confirmed",
+    "execution_plan_ref": "execution-plan.md",
+    "execution_plan_status": "confirmed",
+    "execution_authorization_ref": "execution-authorization.json",
+    "execution_authorization_digest": null
+  },
+  "reviews.jsonl": [
+    {
+      "review_id": "R001",
+      "source_id": "SRC001",
+      "start_ms": 0,
+      "end_ms": 8000,
+      "modalities": [
+        "video",
+        "audio"
+      ],
+      "reviewer": "synthetic-reviewer",
+      "result": "reviewed",
+      "evidence_locator": "controlled fixture only",
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b"
+    }
+  ],
+  "scenes.jsonl": [
+    {
+      "scene_id": "S001",
+      "source_ranges": [
+        {
+          "source_id": "SRC001",
+          "start_ms": 0,
+          "end_ms": 20000
+        }
+      ],
+      "facts": [
+        "synthetic controlled scene"
+      ],
+      "unknowns": []
+    }
+  ],
+  "sources.json": [
+    {
+      "source_id": "SRC001",
+      "locator": "synthetic-only.mp4",
+      "version": "synthetic-v1",
+      "duration_ms": 20000,
+      "time_mapping": {
+        "type": "identity"
+      },
+      "usable_ranges": [
+        {
+          "start_ms": 0,
+          "end_ms": 20000,
+          "reason": "controlled synthetic full range"
+        }
+      ],
+      "downstream_constraints": []
+    }
+  ],
+  "speaker-adjudications.csv": {
+    "headers": [
+      "adjudication_id",
+      "stage",
+      "source_id",
+      "episode",
+      "scene_id",
+      "detail_interval_id",
+      "utterance_id",
+      "start_ms",
+      "end_ms",
+      "frame_window_refs",
+      "lip_movement_observation",
+      "visible_speaker_candidate",
+      "addressee_candidate",
+      "audio_speaker_candidate",
+      "hard_subtitle_signal",
+      "asr_signal",
+      "asr_role",
+      "evidence_resolution_rule",
+      "subtitle_audio_conflict",
+      "decision",
+      "decision_basis",
+      "confidence",
+      "evidence_refs",
+      "unknowns",
+      "review_refs"
+    ],
+    "rows": []
+  },
+  "structure-questions.csv": {
+    "headers": [
+      "question_id",
+      "stage",
+      "source_id",
+      "episode",
+      "scene_id",
+      "detail_interval_id",
+      "frame_refs",
+      "plan_node_id",
+      "question",
+      "answer",
+      "answer_status",
+      "evidence_refs",
+      "confidence",
+      "confidence_basis",
+      "unverified_items",
+      "next_check",
+      "review_refs"
+    ],
+    "rows": []
+  },
+  "timeline.json": {
+    "schema_version": "1.4",
+    "project_id": "synthetic-review",
+    "coordinate_space": "assembly",
+    "status": "ready_for_render",
+    "fps_num": 25,
+    "fps_den": 1,
+    "width": 320,
+    "height": 180,
+    "duration_budget": {
+      "sum_event_frames": 125,
+      "sum_transition_overlap_frames": 0,
+      "computed_output_frames": 125,
+      "target_max_frames": null,
+      "status": "checked_no_limit"
+    },
+    "events": [
+      {
+        "event_id": "E001",
+        "kind": "source",
+        "source_id": "SRC001",
+        "unit_id": "U001",
+        "source_in_ms": 1000,
+        "source_out_ms": 6000,
+        "speed": 1,
+        "out_in_frame": 0,
+        "out_out_frame": 125,
+        "function": "controlled synthetic scene",
+        "deep_observation_refs": [
+          "DO001"
+        ],
+        "edit_boundary_ref": "EB001",
+        "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+        "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+        "adopted_observation_refs": [
+          "DO001"
+        ],
+        "adopted_boundary_ref": "EB001",
+        "evidence_status": "supported",
+        "source_constraint_ref": "source:SRC001",
+        "audio_boundary": {
+          "required_start_ms": 1300,
+          "required_end_ms": 5800
+        },
+        "dialogue_required_range": "1300-5800",
+        "sync_mode": "locked",
+      "audio_source_refs": [
+        "A001"
+      ],
+      "adopted_utterance_refs": [
+        "T001"
+        ]
+      }
+    ],
+    "audio_tracks": [
+      {
+        "track_id": "A001",
+        "kind": "original",
+        "source_id": "SRC001",
+        "source_in_ms": 1000,
+        "source_out_ms": 6000,
+        "gain_db": 0,
+        "anchor_event_id": "E001",
+        "local_in_frame": 0,
+        "local_out_frame": 125,
+        "narrative_role": "dialogue_information",
+        "treatment_reason": "preserve full synthetic audio",
+        "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+        "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+        "source_constraint_ref": "source:SRC001",
+        "sync_event_id": "E001",
+        "sync_mode": "locked",
+        "speed": 1,
+        "fade_in_ms": 0,
+        "fade_out_ms": 0,
+      "treatment": "preserve",
+      "review_refs": [
+        "R001"
+      ]
+      }
+    ],
+    "text_tracks": [
+      {
+        "text_id": "TXT001",
+        "kind": "explanation",
+        "text": "synthetic review",
+        "anchor_event_id": "E001",
+        "local_in_frame": 0,
+        "local_out_frame": 125,
+        "fade_in_frames": 0,
+        "stable_hold_frames": 125,
+        "fade_out_frames": 0
+      }
+    ]
+  },
+  "transcript.jsonl": [
+    {
+      "utterance_id": "T001",
+      "source_id": "SRC001",
+      "start_ms": 1300,
+      "end_ms": 5500,
+      "text": "Synthetic complete expression",
+      "origin": "manual",
+      "audio_verified": true,
+      "speaker": "A",
+      "addressee": "B",
+      "review_refs": [
+        "R001"
+      ],
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b"
+    }
+  ],
+  "transitions.json": [],
+  "units.jsonl": [
+    {
+      "unit_id": "U001",
+      "scene_id": "S001",
+      "source_id": "SRC001",
+      "start_ms": 0,
+      "end_ms": 8000,
+      "utterance_ids": [
+        "T001"
+      ],
+      "context_ranges": [
+        {
+          "source_id": "SRC001",
+          "start_ms": 0,
+          "end_ms": 8000
+        }
+      ],
+      "protected_ranges": [
+        {
+          "start_ms": 1500,
+          "end_ms": 5500,
+          "reason": "synthetic complete expression"
+        }
+      ],
+      "verification": {
+        "audio": "reviewed",
+        "visual": "reviewed",
+        "context": "reviewed",
+        "review_refs": [
+          "R001"
+        ],
+        "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+        "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b"
+      }
+    }
+  ]
+}

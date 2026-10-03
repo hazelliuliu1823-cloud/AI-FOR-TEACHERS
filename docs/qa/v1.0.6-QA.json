@@ -1,0 +1,240 @@
+{
+  "version": "1.0.6",
+  "date": "2026-10-01",
+  "base_file": "long-video-remix-v1.0.5-github-ready(1).zip",
+  "base_zip_sha256": "aa1def28067ed6592bf31b33d2b988c7c1b4fae5654d3c4a3d85a3aa01c72147",
+  "confirmed_scope": [
+    "Structure output contract with declared exceptions and feasible continuation",
+    "Detail real-source keyframe references",
+    "Self-contained Detail handoff including downstream package requirements",
+    "Direct 2 complete Execution Package and reusable reference",
+    "Reference Application Rules using a small number of style samples",
+    "Execute consumes the full confirmed package",
+    "Reference Compliance in existing QA"
+  ],
+  "changed_existing_files": [
+    "CHANGELOG.md",
+    "INSTALL.md",
+    "README.md",
+    "RELEASE_NOTES.md",
+    "SKILL.md",
+    "agents/openai.yaml",
+    "assets/execution-plan-template.md",
+    "assets/project-template.json",
+    "references/data-contracts.md",
+    "references/execution-integrity.md",
+    "references/qa-handoff.md",
+    "references/regression-checklist.md",
+    "references/workflow.md",
+    "scripts/execution_integrity.py",
+    "scripts/prepare_execution_authorization.py",
+    "scripts/validate_project.py",
+    "SHA256SUMS"
+  ],
+  "added_files": [
+    "assets/execution-handoff-template.md",
+    "assets/execution-reference-template.md",
+    "assets/keyframe-reference-template.json",
+    "assets/structure-exception-template.json",
+    "references/execution-package.md",
+    "tests/test_execution_package.py",
+    "v1.0.6-QA.json",
+    "v1.0.6-QA.md",
+    "README.en.md"
+  ],
+  "removed_files": [],
+  "unchanged_files": {
+    ".gitignore": "b3a614c7e85dd06d58c006dfab944dee2cc7b65c4f91da4310b6c6ab2b3ad183",
+    "LICENSE": "ebadc48370bcef99cdf8ab3f9d7516fd8d2cf86eab22c3b3aae58313162887ed",
+    "assets/action-node-candidate-template.csv": "ed4a53a61cc1c0da0b44f61095eafa78f47d0dedd7a414e65f515bb9ba1089b6",
+    "assets/brief-template.md": "f2bf620a7b1118fb76c00bdfc147f20e56ff77a05efbb7b09c200cde4a71ca55",
+    "assets/content-map-template.md": "90c5b5fd5a7771b0a512dd3e807b12c04c885f3259553efe3a8723b903b26065",
+    "assets/deep-observation-template.csv": "e3ddc73f0c117b07afcdbcd771657a44fabf5bbc89548160bcab3b3b38578435",
+    "assets/detail-interval-template.csv": "3c7e3d8e3e65f2c81a13643b9635b2cddff6b9dd18fc04d8e3ff2ba994feecc0",
+    "assets/edit-boundary-template.csv": "de62279e9fb7ff217cb841d29353c26cd122814bc5134cddfbfaf277b0a7466e",
+    "assets/editorial-plan-template.md": "98ab744e5d96602a5bee2b5fa182a98cec38bacc1530e372444ab5f52b6090d0",
+    "assets/execution-authorization-template.json": "9caf0ae162d0b4f52c0a34e046c17777a924e6ce71ac5a0de0cf1de113bea7a7",
+    "assets/frame-observation-template.csv": "f65fc6e251f9afb070fa241a7e4c79615994e715e048e243039925ca34e55ee3",
+    "assets/icon.svg": "49315dda7125ec5fc77ef5f2b96126d8b2121c6e72944b4702972e90f321d3ee",
+    "assets/narrative-direction-template.md": "0549b4d79c4cc233fdef24830dac3675558683fa23ef7ad9b6f8a50b9a2779dc",
+    "assets/speaker-adjudication-template.csv": "1c3852fc2c41e1b64b4e7991df48f06da5d6f0957608106d81b498f5f98e509d",
+    "assets/structure-question-template.csv": "9f7f797bb44498173b02c1009e35d054f20b3c569f97a94b9b983b2c84e66492",
+    "assets/timeline-template.json": "3a8e60f312898c674fb88b819bbe6c98813078af35d91d80f1e9ab9d3bd265c4",
+    "examples/content-performance-analysis.md": "cd9ef655059253cc95a17264132825db590659d90a07d7b5eb63373420a2ce24",
+    "examples/synthetic-ready/action-node-candidates.csv": "3ae7883f182b0e26f279ef02d2b6ba7ee01852b8c73b068b19ed8d759f570389",
+    "examples/synthetic-ready/content-map.md": "ff6540edbcd448878651f9c905e2801603a41f52ba69bd6514ce04028c70fde2",
+    "examples/synthetic-ready/coverage.json": "0087467fc8da8032e205e7ec20ff58d87f39a562159e0f712430f1eaefb6043c",
+    "examples/synthetic-ready/deep-observations.csv": "1ac42b890a6789f01e0b8c0a919bb1e52f1cb6ce51e26f8fc38efdba8d74d8c4",
+    "examples/synthetic-ready/detail-intervals.csv": "3a0afc0c2fd829eb4916fdf552605981cc29e09fe52d9a96669fad378fe601a2",
+    "examples/synthetic-ready/edit-boundaries.csv": "8aea73f0d6754eb5e3cd37f59e11c8317626a372ef1642b7b2270b343a9fca13",
+    "examples/synthetic-ready/execution-authorization.json": "894b47ffba03b5274d4f9c43a11afc2841b20d7619ef022808ce4818c8c3f2fe",
+    "examples/synthetic-ready/execution-plan.md": "d29390611efc6ecd7aaa094fcf12b7ffce79dff0bad98b3b0e84150d56bb061f",
+    "examples/synthetic-ready/frame-observations.csv": "e397b5f486d7a05285eab0dadd548e249481a60da36e0a9f9b2ae1f4f8b77a34",
+    "examples/synthetic-ready/frames.jsonl": "3bddb8b26461ea6262731b32750e8c3b2868c36330c1a8f12cc94cc108944797",
+    "examples/synthetic-ready/narrative-direction.md": "7c0eaeb6190c4ea4d249b5dbf75285e3f29f6e03283571225932dbb0a7930013",
+    "examples/synthetic-ready/overview.md": "e744a49f37fb99bc593c996a182530c965da34c40b756fcb00e93f96d5c23822",
+    "examples/synthetic-ready/project.json": "187ae00a5b635853b4d13e2daf3e599cc7cb793a3e2ba7c5ddd99833e15a646a",
+    "examples/synthetic-ready/render-manifest.json": "38244a8b79ea1ce08b3e39189017257be0484a7077af7b18d5a5099a79268fc3",
+    "examples/synthetic-ready/reviews.jsonl": "f08f8bae74776aa7701c8ff175fd8253f990d79a6b485c2c7227168604c869e5",
+    "examples/synthetic-ready/scenes.jsonl": "b5fab0134108ccc03422bc80fd1a61d9b8895a405ae1c58ed3e7d6eacb4d7705",
+    "examples/synthetic-ready/sources.json": "ef7088c3a77047f7462812b2232fa8c95229c99ab5a2c820712c118224f41df4",
+    "examples/synthetic-ready/speaker-adjudications.csv": "d21cdad266f6dd0d56751f8cfebeee8c636cba3a165754e9d136af4fa8a58e67",
+    "examples/synthetic-ready/structure-questions.csv": "56b602c74d85f19ddd5627a4a7d23ecde56e6865d6c174b6fcabf78838c66e53",
+    "examples/synthetic-ready/timeline.json": "e796e2161e7b6cf7598ef02e5824e1026b48a54538b129f79b0f385b2e8718fe",
+    "examples/synthetic-ready/transcript.jsonl": "28d6a14a0bc2b3eb5676740240d33a0ee8cb1645b6ca97510e66753578738781",
+    "examples/synthetic-ready/transitions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "examples/synthetic-ready/units.jsonl": "c00ae3f5fc236dbb34b215fc7bea2d939053c55245750c717d8be0ac2de02676",
+    "references/mcp-adapter.md": "a073bdcf7d93acfbf095cb881641c0040ae7bc6b0d0c9326a4b4b5b347ced87b",
+    "references/montage-rules.md": "c881b74638009c932ff6b30f824f50144413cae91ad9c628dced6f6b6d1b54b1",
+    "references/render-engineering.md": "97690088f030922d70630150efa5990b44f305e27f579a69ec6451faf21aaceb",
+    "references/structure-regression-matrix.md": "6aaaeb9825c72e03f4607f9fa896ead1904113ed9e2af704d0275f7e8443e692",
+    "references/worked-example.md": "b811820cc13afd374f2b2528053360a4e9f5c4fb813ecdd4b73f703b40aa0abc",
+    "scripts/audit_render.py": "0e9e5427afe07f94faee99f6d02ee584c1fbeacb37430b42541f169b2c558de5",
+    "scripts/check_render_authorization.py": "c45242b6fb546ad351153161f694ec4aa4dcc97e292481d119ef37b2dd6959b3",
+    "scripts/compile_render_manifest.py": "97078baa32b386151b5630e3236742a118a7515869952a92fd47eb836d633938",
+    "scripts/timeline_math.py": "b812bfd17da3f6301aa396c732525484e8487629d5f4d28feca290cef54a53be",
+    "tests/fixtures/ready-project.json": "d8ccfd940740a19f34550afb9408bbffddf5bb55ec79c714b5a5363a7b685cdf",
+    "tests/test_dialogue_continuity.py": "4da81fadd06d792fbee476778cc7f2b64209393132efbacdbdc059a5d49325c7",
+    "tests/test_execution_integrity.py": "a851ecc5f43d077a74e416fd72e22292d872c314be2b5a49b1e9b3f2a444a144",
+    "tests/test_independent_audio_dialogue.py": "2b33ddd4cd84101a61225af340d99ae564e9b2894ec3c417455c8ee3bfa0cd76",
+    "v1.0.3-QA.json": "b72baebae246afeba3199b3709f1ac73bdad239c26b4bc155b376b894c5c6717",
+    "v1.0.3-QA.md": "c28a94dbbdc6d82de57989904a90dbb30f56b9d800c92d4ebbe392fdb8fd1c53",
+    "v1.0.4-QA.json": "bd98c49c65300a172f587ae3df3e7eebf784d43c1c138b9c20795352d38ff8fa",
+    "v1.0.4-QA.md": "0be8e41f60cb4a72872ea0f04f838e3507216cd35b172bfe4fdb04371613cb14",
+    "v1.0.5-QA.json": "2958d66da4c0e570b2fb280f2c160b57ee9928823b388b15c629a4240e6eaba0",
+    "v1.0.5-QA.md": "92d81c5719500c00078cc49cdbed95033517bff6fc2f155894a4c8d9c66a3da5"
+  },
+  "direct_conflict_fixes": [
+    "Former all-missing-output stop wording now permits explicit exception handoff without fabricated completion",
+    "Former Execute design wording now consumes Direct 2 style specifications",
+    "Plan-only authorization/input fingerprints now include declared reference documents and assets; legacy undeclared behavior is retained"
+  ],
+  "validation": {
+    "skill_metadata": "pass",
+    "unit_tests": {
+      "status": "pass",
+      "total": 153,
+      "original": 127,
+      "new": 26
+    },
+    "json_templates": "pass",
+    "relative_links": "pass",
+    "legacy_project_validation": "pass",
+    "legacy_compile": {
+      "render_allowed": true,
+      "total_frames": 125,
+      "playback_verified": false
+    },
+    "legacy_current_guard": "pass",
+    "legacy_original_manifest_guard": "pass",
+    "cross_model_handoff_trial": {
+      "status": "pass",
+      "scope": "One independent synthetic static handoff trial; no real media or rendering",
+      "findings": [
+        "Preserved source IDs, time tags, unit and audio-tail protection",
+        "Declared unavailable frames and existing uncertainty without fabricated observations",
+        "Embedded downstream Execution Package sections for an environment without the skill",
+        "Used a small number of style references, without per-shot mapping"
+      ]
+    }
+  },
+  "limits": [
+    "Synthetic data checks do not certify real video understanding or visual quality",
+    "Execution reference completeness and final Reference Compliance remain explicit content/playback review"
+  ],
+  "keyframe_repair": {
+    "date": "2026-10-02",
+    "base_file": "long-video-remix-v1.0.6-github-ready(1).zip",
+    "base_zip_sha256": "50d6d70d97f26b59d8832ded0291b0dc43194e2d779f109fee3b7f1ac9028c20",
+    "version_changed": false,
+    "scope": [
+      "Keyframe unit existence, source/time consistency and agreement with reused frame IDs",
+      "Actual keyframe image bytes included in project input fingerprint",
+      "Unavailable keyframes require a matching E-stage unavailable exception declaration"
+    ],
+    "changed_files": [
+      "RELEASE_NOTES.md",
+      "SHA256SUMS",
+      "scripts/execution_integrity.py",
+      "scripts/validate_project.py",
+      "tests/test_execution_package.py",
+      "v1.0.6-QA.json",
+      "v1.0.6-QA.md"
+    ],
+    "unchanged_file_count": 77,
+    "added_files": [],
+    "removed_files": [],
+    "regression_before_fix": {
+      "execution_package_tests": 26,
+      "failures": 12
+    },
+    "regression_after_fix": {
+      "status": "pass",
+      "total": 153,
+      "inherited_v1_0_6": 138,
+      "added": 15
+    },
+    "skill_metadata": "pass",
+    "legacy_project_validation": "pass",
+    "legacy_compile_render_allowed": true,
+    "legacy_current_guard": "pass",
+    "legacy_original_manifest_guard": "pass"
+  },
+  "readme_integration": {
+    "date": "2026-10-02",
+    "base_file": "long-video-remix-v1.0.6-github-ready-keyframe-fix.zip",
+    "base_zip_sha256": "38e7e83059d9d5f3993d647eb2c35794a05d821024e8d658b03474ac5ac38da6",
+    "uploaded_source_sha256": "f129e4a419c861f1779b6bfe1f43d1a4a1804e9a3c74c0ed2aee5a1f969fccc0",
+    "version_changed": false,
+    "default_readme": "README.md",
+    "default_language": "Chinese",
+    "english_readme": "README.en.md",
+    "source_handling": "Confirmed uploaded body, excluding conversational preface/epilogue; retain existing v1.0.6 Execution Package requirements where the older body conflicts; add sibling English README in file tree",
+    "changed_existing_files": [
+      "README.md",
+      "SHA256SUMS",
+      "v1.0.6-QA.json",
+      "v1.0.6-QA.md"
+    ],
+    "added_files": [
+      "README.en.md"
+    ],
+    "removed_files": [],
+    "unchanged_file_count": 80,
+    "validation": {
+      "status": "pass",
+      "lines_per_language": 375,
+      "headings_per_language": 24,
+      "code_blocks_identical": 4,
+      "paragraph_and_list_alignment": "pass",
+      "table_layout_alignment": "pass",
+      "relative_links": "pass",
+      "language_links": "pass",
+      "scripts_tests_templates_references_examples": "byte-identical to keyframe-fix package",
+      "markdown_render": [
+        {
+          "file": "README.md",
+          "status": "pass",
+          "headings": 24,
+          "tables": 4,
+          "code_blocks": 4,
+          "details": 1
+        },
+        {
+          "file": "README.en.md",
+          "status": "pass",
+          "headings": 24,
+          "tables": 4,
+          "code_blocks": 4,
+          "details": 1
+        }
+      ]
+    },
+    "skill_metadata": "pass",
+    "code_regression_reused": {
+      "status": "pass",
+      "total": 153,
+      "basis": "Actual prior keyframe-repair test result; every script, test and fixture remains byte-identical"
+    }
+  }
+}

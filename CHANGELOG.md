@@ -1,26 +1,121 @@
-# 更新记录
+# Changelog
 
-## v1.1.0 · 待发布 · 新增教师 Skill
+Public release packaging targets v1.0.7. Earlier entries are retained as development history; their dates do not imply published GitHub Releases or tags.
 
-- 本包修订日期为 2026-10-03；这是待发布的更新包，不表示 GitHub 已发布 v1.1.0。主分支误传文件已由单独的撤销提交清理，详见下方修复记录。
-- README 保留主分支 9 月 25 日补充的项目简介，再加入 Skill 使用说明和书稿 PDF 链接。根目录 LICENSE 沿用 v1.0.0 原件，版权方为 hazelliuliu1823。
-- INSTALL.md 明确只替换教师 Skill 所在的旧目录，区分误装目录与独立正常使用的视频 Skill，并分开核对实际加载与试答行为；试答检查新增课题名与“构思转正式通知”两条。
-- 新增 `skill/teacher-ai-workflow/`：
-  - SKILL.md：共同交互规则集中为宽泛问题、收到补充、转入正式使用三段；四类教师工作均可自然提问，直接列表按请求给出。教研只有大方向时，先形成研究问题并附暂拟题名；问题与证据已确认时直接拟名。构思内容默认是建议，只对容易混淆的具体事实说明身份。包含共同规则、正式交付方法、场景路由、人工确认点、常见偏差和交付方式；恢复未提到“工作法”或“Skill”时的任务触发提示。构思中未提供的学情、困难和安排不说成已经存在；共同规则第 4 条与 rules/common.md 保持一致；对外发布时承办岗位写作建议。教师说“就按这个写”时，讨论用的日期、人数仍需确认后才能写入正式稿。
-  - references/：教学设计、学生评价、家校沟通与行政文稿、教师研究、材料整理与审核、持续任务与经验沉淀六份参考，保留各场景的专业方法与使用条件，共同启动和对话续接规则只在主文件维护。按书稿第 7 章与练习 F.4，只有方向、尚未形成研究问题时先给候选问题、暂拟题名及诊断材料；问题与证据已确认时按要求拟名。
-  - examples/material-research-course.md：在保留案例正文的基础上，补充逐轮确认的运行说明，区分继续讨论候选与确认后继承基线。
-  - templates/：教学设计验收卡拆为通用卡与材料研究补充卡，并去掉重复项；其余卡片沿用书稿。
-  - evals/evals.json：共 23 项案例，覆盖正式成果、开放咨询、直接列表、部分条件续接及从构思转入正式使用；作文题目列表检查说明长度，家长开放日案例检验暂用日期和人数不会进入正式通知成为事实。第 1 项允许标明待预实验验证的分钟估计；第 5 项与书稿 F.4 参考结果一致；第 14、21 项首轮改用与第 13、20 项不同的问法。含 turns 的案例需逐轮运行，不能合成一条指令；案例本身不表示已经通过或外部工具已加载。
-  - LICENSE：复制根目录许可原件，独立分发的 teacher-ai-workflow.skill 同样包含此文件。
-- 随包测试记录保留原回答，修正第 2 项把建议写成正在开展的教师行动、第 3 项肯定超出材料的判定。2026-10-03 独立补测第 2、3、5、23 项及“研究问题与证据已确认，只要题名”的补充场景；记录实际回答、检查结果与未完全符合测试说明之处，不再声称 125 个检查项全部通过。
-- 按本轮范围，书稿及教师用的 book/、core/、docs/、prompts/、rules/、templates/、examples/、training/ 保持原样，与 v1.0.0 逐字节一致。
+## v1.0.7 — Prompt Examples & Bilingual Guide · 2026-10-03
 
-## 主分支误传与修复记录
+- Included four matching Chinese and English README prompt examples with their expected deliverables: start Broad Structure, propose directions from Broad, locate Detail intervals for a confirmed direction, and complete Detail with a self-contained handoff.
+- Kept the existing first-screen positioning, workflow illustration, core-value table, folded method, and content-performance example.
+- Updated the release version, installation and update guidance, release notes, and package checksums. Existing v1.0.6 project data and confirmed plans remain reusable.
+- Preserved all engineering scripts, tests, templates, contracts, examples, agent metadata, and historical QA records byte for byte.
+- Re-ran all 153 regression tests under Python 3.12.14 and the synthetic example's validation, compilation, and render-authorization checks; all passed. Real-video analysis and playback were not re-tested for this documentation release.
 
-- 2026-10-01：提交 e231ba3 将 long-video-remix 的 13 个根目录文件新增或替换到教师仓库，包括 README、LICENSE、SKILL、安装与发布说明、校验和及 QA 记录；教师资料目录未改动。
-- 2026-10-02：提交 1d7b462 撤销上述误传，恢复误传前的教师门户 README 和原 LICENSE，并删除误传新增文件。此次撤销没有新增教师 Skill；本包的 Skill 需另行加入。
+## v1.0.6 — Structure Exceptions & Execution Package · 2026-10-01
 
-## v1.0.0 · 2026-09-25 · 首次发布
+- Kept existing stages, two Direct decisions and locked Structure schemas; added explicit unavailable / uncertain / partial declarations with reason, impact and downstream handling so feasible Structure / draft / handoff work continues without fabricated facts.
+- Added a small real-source Keyframe Reference deliverable inside Detail, with extraction exceptions and source-time traceability.
+- Added a self-contained Detail handoff that carries narrative context, selected clips, evidence / protection, images and the downstream complete Execution Package requirements across model boundaries.
+- Defined Direct 2 output as Execution Plan + Production Reference, with actionable text / audio / transition specifications, assets, constraints and QA; added reusable handoff / reference templates.
+- Replaced per-visual matching with Reference Application Rules: one or two representative style samples define whole-video design rules; no per-shot / subtitle mapping.
+- Made Execute consume the full confirmed package and added Reference Compliance to existing QA. Declared reference document / asset changes invalidate old confirmation and render entry; undeclared legacy project behavior remains unchanged.
+- Preserved all original CSV templates, historical examples / tests, timeline math, rendering algorithms, caches, dialogue protection and authorization requirements.
 
-- 《教师 AI 实用工作法》V1 配套资料：书稿（Word、PDF）、方法索引、共同规则、七类场景指南与指令、案例、通用卡片和十四课时培训安排。
-- 此版未包含教师 Skill。
+### 2026-10-02 — Keyframe integrity fixes
+
+- Checked keyframe source units and source times against unit ranges and existing frame records.
+- Included actual keyframe image bytes in input fingerprints so replacing an image invalidates an old render entry.
+- Required unavailable keyframes to match a synchronized exception declaration.
+- Added 15 regression cases; all 153 tests passed in the engineering validation.
+
+### 2026-10-02 — Bilingual documentation and release preparation
+
+- Added a complete English README with reciprocal language links; Chinese remains the default.
+- Shortened the introduction while retaining lower-cost reuse, rich structure, human Direct decisions, reliable Execute, the folded method, and the content-performance example.
+- Corrected both file trees, archived historical QA under docs/qa, and updated affected links and SHA256SUMS.
+- Added English skill-description keywords, concrete local installation commands, and a source-material rights statement; aligned copyright attribution with hazelliuliu1823-cloud.
+- Kept scripts, tests, templates, contracts, agent metadata, and examples unchanged.
+
+## v1.0.5 — Independent Source Audio Dialogue · 2026-10-01
+
+- Fixed F4: derive and validate utterances independently for every adopted source audio track, including card-only speech, unassociated extra tracks and audio-only sources. Full current utterance evidence and audio verification are required before preservation decisions.
+- Included audio-only utterances and their dedicated reviews in adopted_evidence_digest. Changes invalidate unchanged confirmation; recompilation must still reject stale evidence.
+- Preserved source-event synchronization and existing event-level exceptions. Independent speech permits asynchronous output placement, compatible continuation across cards and valid track-level audio_required_range exceptions; explicit policy changes require a track-level reason.
+- Added independent speech regression cases and v1.0.4 migration guidance. Retained all formal CSV templates, original core scripts, two Direct stages, layered caches, render audit and previously declared capability boundaries.
+
+## v1.0.4 — Dialogue Selection & Full Audio Review Coverage · 2026-10-01
+
+- Fixed F1: validate explicitly adopted utterances and known same-source speech intersecting actual video / associated audio selections before checking self-declared protection ranges. Missing, stale or unverified adopted speech cannot be filtered out by an underdeclared audio boundary.
+- Fixed F2: dialogue preservation is triggered by adopted speech / speech metadata independently of continuity_type. Scene or action labels cannot allow muted, replaced or misaligned preserved dialogue. Explicit policy changes require a confirmed event-level reason.
+- Fixed F3: every source audio track requires independent current audio review_refs covering its complete source range, including J/L-cut extensions. Track-only reviews enter the adopted evidence digest; creative exceptions do not grant review coverage.
+- Added explicit adopted_utterance_refs to ready source events, migration instructions, positive and negative regression cases, and a refreshed synthetic-ready example.
+- Preserved the six formal Structure CSV templates, two Direct stages, timeline math, layered caches and render audit. Broad coverage, sampling / semantic proof, Deep protection transfer and non-dialogue audio closure remain explicitly bounded.
+
+## v1.0.3 — Structured Representation & Execution Integrity · 2026-10-01
+
+- Added current-source / time-mapping bindings for adopted observations, boundaries, reviews, unit verification, utterances, video events and source audio tracks; stale evidence blocks ready execution.
+- Added a machine-readable Direct 2 execution authorization, with selected events / units / boundaries, exact sequence, adopted evidence snapshot, track / transition recipes and explicit permitted adjustments. Decision or evidence changes invalidate its fingerprints.
+- Extended existing Edit Boundary protection to source-audio coverage, duration, source/output synchronization and fades; explicit supported J/L-cut and creative tail-cut exceptions remain possible.
+- Enforced source_scope, usable_ranges, optional allowed_scope and typed source-range constraints against actual video and audio adoption.
+- Required precise override targets, violated rules, current successful review coverage and confirmed creative decisions; placeholder and unrelated overlap/boundary reviews no longer release execution.
+- Default compilation now rejects non-ready or unauthorized drafts; --planning carries render_allowed=false. Added a current-input / manifest-integrity guard for renderer adapters.
+- Added output fps to mix_audio cache identity while retaining the existing layered cache design, cumulative timeline math and render-audit script.
+- Reworked the README first screen around lower repeated multimodal-understanding cost, reusable rich structure and human creative direction. Preserved complete technical content and added installation, migration, release, executable regression and synthetic-ready files.
+- Preserved the six formal Structure tables, two Direct stages and original render QA. This release does not claim automatic proof of all coverage, sampling or semantic judgments.
+
+## v1.0.2 — Compact multimodal structure for lower-context reuse
+
+- Added a hard **Edit Boundary / Continuity Layer** between Detailed Structure and Direct 2: `edit-boundaries.csv` records real audio tails, action/reaction settle points, preferred in/out, safe windows, must-keep ranges, handles and cut risk.
+- `ready_for_render` now requires every selected source event to reference an explicit edit boundary; default cuts must land inside the safe windows and preserve must-keep ranges. Deliberate boundary violations require an explicit override reason and review references.
+- Added boundary-aware validation / compilation so subtitle or ASR endpoints cannot silently become cut points, while preserving all existing Structure, two-Direct, evidence, timeline, cache and render-QA behavior.
+- Fixed final-layer cache identity for generated card text: changing `card_text` or card text-render parameters now invalidates only the final composited cache, while clean-video and audio caches remain reusable when otherwise safe.
+- Fixed validator preflight when Directed Deep / Detail is incomplete: Deep indexes are initialized safely and evidence-linkage checks are skipped until the stage is complete, so ready-state violations return structured validation/compiler errors instead of crashing.
+- Refined Execute evidence linkage from coarse `unit_id` aggregation to explicit event-level `deep_observation_refs`; adopted observations are now checked for source identity, source-time coverage, and current evidence status, while unrelated observations in the same unit do not block execution.
+- Added dependency-aware cache reuse reporting: unknown audio source / asset versions disable `mix_audio` and `final` reuse without unnecessarily disabling known video-layer caches; `cache_reusable` remains the backward-compatible final aggregate flag.
+- Synced README responsibility wording so evidence verification stays in Directed Deep / Detail Structure, and added `timeline_math.py` to the repository tree.
+
+- Clarified the canonical workflow without changing the confirmed Structure / Execute capabilities: Broad Structure now explicitly exits as a **formal textual Structured Observation Layer** (observation tables + scene/segment roll-ups) before Content Map; Direct is explicitly two-pass — first Narrative Direction, then post-Detail Editorial Execution Plan.
+- Added `assets/narrative-direction-template.md` and `assets/execution-plan-template.md`; legacy `editorial-plan-template.md` remains for compatibility. Execute is not allowed to skip the second Director decision and invent the final storytelling plan from evidence alone.
+
+- Tightened negative-evidence rules: sparse or 4fps sampling can establish `not_observed`, not interval-level absence; negative facts require bounded scope plus fact-type-appropriate continuous video/audio review or direct counterevidence.
+- Added fact-type-specific evidence conflict handling; dialect / strong-accent ASR defaults to locator-only until verified.
+- Hardened `ready_for_render` gates: completed Broad/Content Map/Detail stages, both Direct documents confirmed, selected Deep evidence not pending/contradicted, and explicit render authorization are now mechanically checked.
+- Validator and compiler now share cumulative timeline quantization and post-overlap output coordinates; text/audio tracks are checked against final output length, not assembly length.
+- `source.time_mapping` is included in precise cache identity, so mapping changes invalidate unit / clean-video / audio / final cache keys.
+- Added a canonical time-tag policy from source evidence through assembly/output coordinates, with source/time consistency checks.
+- Added source usable-boundary propagation into Direct, long-task incremental checkpoint / resume rules, a frame-based duration budget ledger, feedback-to-invalidation mapping, and explicit audio narrative roles.
+
+- Restored the full Board/Broad → Detail Structure information floor: frame-end timing, original-audio keypoints, topic judgment, confidence + evidence basis, detail interval cards, minimum-effective-unit candidates, and frame-level speaker/addressee adjudication.
+- Structure summaries, Content Map, editorial copy, or edit plans are explicitly forbidden from replacing these base observation artifacts.
+
+- Restored the Structure minimum-information floor as a hard requirement: one structured row per analyzed sampled frame, with visible facts, action/state, motif tags, hard text, change-from-previous, content description and unknowns preserved before summaries.
+- Added `assets/action-node-candidate-template.csv` for action / gaze / position / object-change candidates with default 4fps local inspection windows.
+- Added `assets/structure-question-template.csv` for question → answer → evidence → unresolved-item tracking.
+- Expanded Deep Observation with key visual changes, emotional cues / interpretation, motif tags, question refs and unverified items.
+- Strengthened validation and QA so Content Map / final copy cannot substitute for the foundational Structure layer.
+- Rebalanced the README first screen so the project presents **Structure + Execute** as the two core capabilities, with Human Direct as the creative interface between them.
+- Repackaged the README around the core value of Structure: turning expensive multimodal source material into compact, searchable and reusable structured data.
+- Added a clear before / after explanation and a concrete content-performance example that joins time-coded user behavior with structured visual / narrative observations.
+- Added `examples/content-performance-analysis.md` to show how the same structured layer can support analytics and research beyond editing.
+- 强化 Structure 的核心定位：把视频 / 图像 / 对白 / 场景上下文等高成本多模态输入压成 **compact structured representation**，供后续人和模型优先通过表格 / 文本低上下文复用。
+- 明确 Direct 可在独立研究 / 编导环境中结合 Structure 输出、行业 / 主题资料、平台语境、参考案例与大量人工判断形成并确认 editorial / script plan。
+- 明确计算成本策略：Broad Structure 低密度全局压缩；只有已确认脚本命中的区域才进入 Directed Deep Structure 高密度多模态回查。
+- `project.json` 增加可选的 `research_context_refs` 与 `human_decision_refs`，用于保留外部研究和人工决策来源。
+- 更新 README、Skill、workflow、data contracts、agent metadata 与时间轴校验 / 编译实现；保持 renderer-neutral 架构、正式 Structure / Direct 表单与 render-audit 脚本不变。
+
+## v1.0.1 — Structure observation layer restored
+
+- Restored a formal human-readable **Frame Observation Index** for Broad Structure instead of leaving downstream users with only contact sheets / raw frame evidence.
+- Added `assets/frame-observation-template.csv`.
+- Added a formal **Deep Observation Index** for Directed Deep Structure.
+- Added `assets/deep-observation-template.csv`.
+- Expanded Directed Deep Structure to capture complete visual description, content description, setting context, narrative context, before / after state, dialogue / audio verification, interpretations, unknowns and counterevidence before cut decisions.
+- Updated README, workflow, data contracts, worked example, handoff rules and agent metadata accordingly.
+- No change to the core Direct boundary, timeline compiler, renderer-neutral architecture or render-audit scripts.
+
+## v1.0.0 — Initial workflow
+
+- Broad Structure → Human Direct → Directed Deep Structure → Execute.
+- Content Map / Brief / Editorial Plan templates.
+- Evidence and timeline contracts.
+- Render-manifest compiler and render audit tooling.
+- MIT License.

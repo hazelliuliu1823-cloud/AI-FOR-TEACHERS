@@ -1,0 +1,18 @@
+[
+  {
+    "frame_id": null,
+    "source_id": null,
+    "timestamp_ms": null,
+    "image_ref": null,
+    "source_segment": null,
+    "narrative_role": null,
+    "notes": null,
+    "status": null,
+    "reason": null,
+    "impact": null,
+    "downstream_handling": null,
+    "source_signature": null,
+    "time_mapping_digest": null,
+    "evidence_refs": []
+  }
+]

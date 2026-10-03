@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.4",
+  "project_id": "synthetic-review",
+  "coordinate_space": "assembly",
+  "status": "ready_for_render",
+  "fps_num": 25,
+  "fps_den": 1,
+  "width": 320,
+  "height": 180,
+  "duration_budget": {
+    "sum_event_frames": 125,
+    "sum_transition_overlap_frames": 0,
+    "computed_output_frames": 125,
+    "target_max_frames": null,
+    "status": "checked_no_limit"
+  },
+  "events": [
+    {
+      "event_id": "E001",
+      "kind": "source",
+      "source_id": "SRC001",
+      "unit_id": "U001",
+      "source_in_ms": 1000,
+      "source_out_ms": 6000,
+      "speed": 1,
+      "out_in_frame": 0,
+      "out_out_frame": 125,
+      "function": "controlled synthetic scene",
+      "deep_observation_refs": [
+        "DO001"
+      ],
+      "edit_boundary_ref": "EB001",
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+      "adopted_observation_refs": [
+        "DO001"
+      ],
+      "adopted_boundary_ref": "EB001",
+      "evidence_status": "supported",
+      "source_constraint_ref": "source:SRC001",
+      "audio_boundary": {
+        "required_start_ms": 1300,
+        "required_end_ms": 5800
+      },
+      "dialogue_required_range": "1300-5800",
+      "sync_mode": "locked",
+      "audio_source_refs": [
+        "A001"
+      ],
+      "adopted_utterance_refs": [
+        "T001"
+      ]
+    }
+  ],
+  "audio_tracks": [
+    {
+      "track_id": "A001",
+      "kind": "original",
+      "source_id": "SRC001",
+      "source_in_ms": 1000,
+      "source_out_ms": 6000,
+      "gain_db": 0,
+      "anchor_event_id": "E001",
+      "local_in_frame": 0,
+      "local_out_frame": 125,
+      "narrative_role": "dialogue_information",
+      "treatment_reason": "preserve full synthetic audio",
+      "source_signature": "81b93a79efb1ad2a8c5cf0610e1576051c9383c95147670c7ef2aae11f43c3bd",
+      "time_mapping_digest": "da3787e2d862bcce35bac3c8f3c3e23e5d6feb8619cb9c04cae4219e779b043b",
+      "source_constraint_ref": "source:SRC001",
+      "sync_event_id": "E001",
+      "sync_mode": "locked",
+      "speed": 1,
+      "fade_in_ms": 0,
+      "fade_out_ms": 0,
+      "treatment": "preserve",
+      "review_refs": [
+        "R001"
+      ]
+    }
+  ],
+  "text_tracks": [
+    {
+      "text_id": "TXT001",
+      "kind": "explanation",
+      "text": "synthetic review",
+      "anchor_event_id": "E001",
+      "local_in_frame": 0,
+      "local_out_frame": 125,
+      "fade_in_frames": 0,
+      "stable_hold_frames": 125,
+      "fade_out_frames": 0
+    }
+  ]
+}

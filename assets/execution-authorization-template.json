@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "authorization_id": null,
+  "version": 1,
+  "status": "draft",
+  "confirmed_by": null,
+  "project_id": null,
+  "project_version": null,
+  "execution_plan_digest": null,
+  "narrative_direction_digest": null,
+  "selected_events": [],
+  "sequence": [],
+  "allowed_units": [],
+  "allowed_boundaries": [],
+  "allowed_adjustments": {},
+  "event_specs": {},
+  "audio_specs": {},
+  "text_specs": [],
+  "transitions": [],
+  "output": {
+    "fps_num": null,
+    "fps_den": null,
+    "width": null,
+    "height": null
+  },
+  "audio_policy": null,
+  "source_bindings": {},
+  "evidence_digest": null
+}

@@ -1,0 +1,683 @@
+{
+  "version": "v1.0.4",
+  "date": "2026-10-01",
+  "scope": [
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "baseline_archive_sha256": "becb66ac866608ac2f47a96fd63d3730d6cc21de9b6f385cafd0814544c33a3b",
+  "review_markdown_sha256": "2e40210ba55b42dc56b3d1a17ae45195469ab78c9529d52db1c7121cca60443c",
+  "unit_regression": {
+    "python": "3.12.14",
+    "count": 87,
+    "failures": 0,
+    "errors": 0,
+    "tests": [
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_action_type_cannot_mute_preserved_dialogue",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_audio_verified_false_is_blocked_even_with_valid_review",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_creative_override_cannot_upgrade_unreviewed_source_audio",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_duplicate_explicit_utterances_are_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_empty_explicit_selection_cannot_hide_in_range_utterance",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_explicit_out_of_selection_adoption_is_checked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_explicit_policy_change_allows_confirmed_intentional_silence",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_j_cut_unreviewed_lead_in_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_known_in_range_speech_survives_missing_unit_references",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_l_cut_extension_review_must_have_audio_modality",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_l_cut_failed_extension_review_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_l_cut_missing_extension_review_id_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_l_cut_one_ms_review_gap_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_l_cut_review_overlap_is_legal",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_l_cut_reviewed_extension_is_legal",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_l_cut_stale_extension_review_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_l_cut_unreviewed_extension_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_omitted_asr_cannot_claim_unheard_transcript",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_omitted_second_utterance_is_checked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_omitted_utterance_missing_review_is_still_checked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_omitted_utterance_stale_binding_is_still_checked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_policy_change_without_reason_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_scene_type_cannot_mute_preserved_dialogue",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_scene_type_cannot_remove_all_dialogue_tracks",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_scene_type_with_preserved_speech_is_legal",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_sentence_removal_override_cannot_use_unrelated_review",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_source_audio_without_explicit_reviews_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_speech_metadata_triggers_protection_without_transcript_ids",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_track_only_review_change_invalidates_evidence_confirmation",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_unadopted_out_of_selection_utterance_is_not_forced_into_edit",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_underdeclared_range_cannot_hide_whole_utterance",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_unknown_explicit_utterance_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_valid_creative_sentence_removal_is_allowed",
+        "status": "pass"
+      },
+      {
+        "test": "test_dialogue_continuity.DialogueContinuityTests.test_wrong_source_explicit_utterance_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_adjacent_usable_ranges_are_a_union",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_adopted_pending_evidence",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_allowed_safe_trim",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_allowed_scope_enforced",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_audio_outside_usable_ranges",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_audio_sync_drift_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_boundary_override_rejects_unrelated_review",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_card_duration_is_an_authorized_decision",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_changed_evidence_requires_reconfirmation",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_changed_plan_requires_reconfirmation",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_concrete_authorized_protected_overlap_is_allowed",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_constraints_changed_after_confirmation",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_cumulative_quantization_and_invalid_overlap",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_detail_without_direct1_is_blocked_even_in_draft",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_direct_selected_events_control_timeline",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_direct_sequence_controls_timeline",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_direct_unit_selection_controls_timeline",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_draft_requires_explicit_planning",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_excluded_range_enforced",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_explicit_creative_tail_cut_is_allowed",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_fade_may_not_erase_dialogue_tail",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_failed_review_is_not_coverage",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_fps_invalidates_audio_cache",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_legal_j_cut",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_legal_l_cut",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_mapping_change_stales_adopted_evidence",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_missing_evidence_binding",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_missing_machine_authorization_blocks",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_missing_render_authorization",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_muted_dialogue_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_override_does_not_exempt_unit_meaning",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_placeholder_override_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_preparation_only_creates_a_draft",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_protected_dialogue_cannot_be_music",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_protected_overlap_placeholder_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_render_guard_rejects_changed_inputs",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_render_guard_rejects_tampered_manifest",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_review_requires_reviewer_and_locator",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_source_audio_duration_mismatch",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_source_constraint_ref_required",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_source_outside_scope",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_source_version_stales_adopted_evidence",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_stale_review_does_not_pass_by_reconfirming_plan",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_successful_but_unrelated_review_does_not_release_override",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_text_only_changes_preserve_media_caches",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_unadopted_contradiction_does_not_block",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_unauthorized_event_adjustment",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_unconfirmed_direct1",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_unconfirmed_direct2",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_valid_ready_and_guard",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_video_outside_usable_union",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_wrong_modality_overlap_review_is_blocked",
+        "status": "pass"
+      },
+      {
+        "test": "test_execution_integrity.IntegrityTests.test_wrong_source_deep_observation",
+        "status": "pass"
+      }
+    ]
+  },
+  "original_report_replays": [
+    {
+      "case": "I01",
+      "expected": "allowed",
+      "before": "allowed",
+      "after": "allowed",
+      "validation_status": "pass",
+      "validation_errors": [],
+      "compile_status": "pass",
+      "guard_status": "pass"
+    },
+    {
+      "case": "I12",
+      "expected": "blocked",
+      "before": "blocked",
+      "after": "blocked",
+      "validation_status": "fail",
+      "validation_errors": [
+        "E001.utterance.T001: unknown review MISSING",
+        "E001.utterance.T001: successful audio reviews do not cover 1300-5500"
+      ],
+      "compile_status": "blocked",
+      "guard_status": "blocked"
+    },
+    {
+      "case": "I13",
+      "expected": "blocked",
+      "before": "blocked",
+      "after": "blocked",
+      "validation_status": "fail",
+      "validation_errors": [
+        "E001.utterance.T001: stale or missing source/time-mapping binding"
+      ],
+      "compile_status": "blocked",
+      "guard_status": "blocked"
+    },
+    {
+      "case": "I14",
+      "expected": "blocked",
+      "before": "allowed",
+      "after": "blocked",
+      "validation_status": "fail",
+      "validation_errors": [
+        "E001: missing valid authorized audio_required_range override for SRC001 1300-5500",
+        "E001: missing valid authorized audio_required_range override for SRC001 1300-5500"
+      ],
+      "compile_status": "blocked",
+      "guard_status": "blocked"
+    },
+    {
+      "case": "I15",
+      "expected": "blocked",
+      "before": "allowed",
+      "after": "blocked",
+      "validation_status": "fail",
+      "validation_errors": [
+        "E001: missing valid authorized audio_required_range override for SRC001 5000-5500",
+        "E001: missing valid authorized audio_required_range override for SRC001 5000-5500"
+      ],
+      "compile_status": "blocked",
+      "guard_status": "blocked"
+    },
+    {
+      "case": "I16",
+      "expected": "blocked",
+      "before": "allowed",
+      "after": "blocked",
+      "validation_status": "fail",
+      "validation_errors": [
+        "E001.utterance.T001: stale or missing source/time-mapping binding",
+        "E001.utterance.T001: unknown review MISSING",
+        "E001.utterance.T001: successful audio reviews do not cover 1300-5500",
+        "E001: missing valid authorized audio_required_range override for SRC001 1300-5500",
+        "E001: missing valid authorized audio_required_range override for SRC001 1300-5500"
+      ],
+      "compile_status": "blocked",
+      "guard_status": "blocked"
+    },
+    {
+      "case": "I17",
+      "expected": "blocked",
+      "before": "allowed",
+      "after": "blocked",
+      "validation_status": "fail",
+      "validation_errors": [
+        "E001.utterance.T001: adopted utterance must be audio_verified",
+        "E001.utterance.T001: unknown review NONEXISTENT",
+        "E001.utterance.T001: successful audio reviews do not cover 1300-5500",
+        "E001: missing valid authorized audio_required_range override for SRC001 1300-5500",
+        "E001: missing valid authorized audio_required_range override for SRC001 1300-5500"
+      ],
+      "compile_status": "blocked",
+      "guard_status": "blocked"
+    },
+    {
+      "case": "I18",
+      "expected": "blocked",
+      "before": "allowed",
+      "after": "blocked",
+      "validation_status": "fail",
+      "validation_errors": [
+        "A001: protected source audio is muted, effectively silent or gain unknown",
+        "E001: missing valid authorized audio_required_range override for SRC001 1300-5500",
+        "E001: missing valid authorized audio_required_range override for SRC001 1300-5800"
+      ],
+      "compile_status": "blocked",
+      "guard_status": "blocked"
+    },
+    {
+      "case": "I20",
+      "expected": "blocked",
+      "before": "allowed",
+      "after": "blocked",
+      "validation_status": "fail",
+      "validation_errors": [
+        "A001.source audio: successful audio reviews do not cover 1000-17000"
+      ],
+      "compile_status": "blocked",
+      "guard_status": "blocked"
+    },
+    {
+      "case": "I21",
+      "expected": "allowed",
+      "before": "allowed",
+      "after": "allowed",
+      "validation_status": "pass",
+      "validation_errors": [],
+      "compile_status": "pass",
+      "guard_status": "pass"
+    }
+  ],
+  "replay_fixture_metadata_additions": "adopted_utterance_refs=[T001]; A001.review_refs=[R001]",
+  "independent_forward_workflow": {
+    "status": "pass",
+    "synthetic_only": true,
+    "resulting_durations": {
+      "fps_num": 25,
+      "fps_den": 1,
+      "final_frames": 150,
+      "final_duration_seconds": 6.0,
+      "E001_video_frames": 125,
+      "E001_video_duration_seconds": 5.0,
+      "E002_card_frames": 25,
+      "E002_card_duration_seconds": 1.0,
+      "A001_audio_source_range_ms": [
+        1000,
+        7000
+      ],
+      "A001_audio_frames": 150,
+      "A001_audio_duration_seconds": 6.0,
+      "duration_kind": "compiled expectation; no decoded media measurement"
+    },
+    "existing_records_changed": {
+      "source_records": [],
+      "observation_records": [],
+      "review_records": [],
+      "unit_records": [],
+      "utterance_records": [],
+      "edit_boundary_records": [],
+      "source_observation_review_records_added": [],
+      "preserved_record_ids": [
+        "SRC001",
+        "F001",
+        "DO001",
+        "R001",
+        "U001",
+        "T001",
+        "EB001"
+      ],
+      "byte_identical_evidence_file_count": 16,
+      "existing_coverage_rows_preserved": true,
+      "coverage_added": "One pending av_review row for SRC001 1000-7000 ms; actual listening unavailable.",
+      "evidence_report": "evidence-preservation.json"
+    },
+    "limitations": [
+      "All evidence and names are synthetic.",
+      "No real media or actual listening was available or performed.",
+      "No video was rendered; final playback, decoded media frames/duration, silence scan, contact sheets and mobile/text readability remain untested."
+    ],
+    "package_code_modified": false,
+    "validation_status": "pass",
+    "compile_status": "compiled_not_rendered",
+    "renderer_guard_status": "pass",
+    "warnings": [],
+    "used_documented_draft": true,
+    "used_test_seal": false,
+    "root_verified_evidence_files": 8
+  },
+  "preservation": {
+    "unchanged_files": [
+      "LICENSE",
+      "v1.0.3-QA.md",
+      "v1.0.3-QA.json",
+      ".gitignore",
+      "references/workflow.md",
+      "references/worked-example.md",
+      "references/structure-regression-matrix.md",
+      "references/qa-handoff.md",
+      "references/render-engineering.md",
+      "references/montage-rules.md",
+      "references/mcp-adapter.md",
+      "agents/openai.yaml",
+      "assets/structure-question-template.csv",
+      "assets/deep-observation-template.csv",
+      "assets/content-map-template.md",
+      "assets/editorial-plan-template.md",
+      "assets/speaker-adjudication-template.csv",
+      "assets/edit-boundary-template.csv",
+      "assets/project-template.json",
+      "assets/brief-template.md",
+      "assets/execution-authorization-template.json",
+      "assets/frame-observation-template.csv",
+      "assets/timeline-template.json",
+      "assets/action-node-candidate-template.csv",
+      "assets/icon.svg",
+      "assets/detail-interval-template.csv",
+      "assets/narrative-direction-template.md",
+      "tests/test_execution_integrity.py",
+      "scripts/timeline_math.py",
+      "scripts/validate_project.py",
+      "scripts/check_render_authorization.py",
+      "scripts/audit_render.py",
+      "scripts/compile_render_manifest.py",
+      "scripts/prepare_execution_authorization.py",
+      "examples/content-performance-analysis.md",
+      "examples/synthetic-ready/frame-observations.csv",
+      "examples/synthetic-ready/overview.md",
+      "examples/synthetic-ready/scenes.jsonl",
+      "examples/synthetic-ready/transitions.json",
+      "examples/synthetic-ready/narrative-direction.md",
+      "examples/synthetic-ready/edit-boundaries.csv",
+      "examples/synthetic-ready/action-node-candidates.csv",
+      "examples/synthetic-ready/transcript.jsonl",
+      "examples/synthetic-ready/reviews.jsonl",
+      "examples/synthetic-ready/coverage.json",
+      "examples/synthetic-ready/sources.json",
+      "examples/synthetic-ready/content-map.md",
+      "examples/synthetic-ready/frames.jsonl",
+      "examples/synthetic-ready/deep-observations.csv",
+      "examples/synthetic-ready/speaker-adjudications.csv",
+      "examples/synthetic-ready/units.jsonl",
+      "examples/synthetic-ready/detail-intervals.csv",
+      "examples/synthetic-ready/structure-questions.csv"
+    ],
+    "changed_old_files": [
+      "SKILL.md",
+      "README.md",
+      "CHANGELOG.md",
+      "RELEASE_NOTES.md",
+      "INSTALL.md",
+      "references/regression-checklist.md",
+      "references/data-contracts.md",
+      "references/execution-integrity.md",
+      "assets/execution-plan-template.md",
+      "scripts/execution_integrity.py",
+      "tests/fixtures/ready-project.json",
+      "examples/synthetic-ready/execution-authorization.json",
+      "examples/synthetic-ready/timeline.json",
+      "examples/synthetic-ready/render-manifest.json",
+      "examples/synthetic-ready/project.json",
+      "examples/synthetic-ready/execution-plan.md"
+    ],
+    "formal_csv_all_byte_identical": true
+  },
+  "static_checks": {
+    "parsed": {
+      "py": 9,
+      "json": 13,
+      "jsonl": 5,
+      "csv": 14
+    },
+    "relative_links": 33,
+    "broken_links": [],
+    "csv_width_errors": []
+  },
+  "controlled_media_audit": {
+    "technical_status": "pass",
+    "checks_scope": "decoded CFR media, quiet detection and contact extraction; not editorial approval",
+    "errors": [],
+    "review_required": [],
+    "playback_verified": false,
+    "file": "qa-media/synthetic-smoke.mp4",
+    "file_sha256": "c38c939fd799c76e08dd1574d7d4b91757b0ff778f60a6d48307d1995864d35b",
+    "manifest_sha256": "38244a8b79ea1ce08b3e39189017257be0484a7077af7b18d5a5099a79268fc3",
+    "expected_frames": 125,
+    "expected_duration_seconds": 5.0,
+    "threshold_db": -50,
+    "minimum_quiet_seconds": 1,
+    "video": {
+      "frames": 125,
+      "start_seconds": 0.0,
+      "end_seconds": 5.0,
+      "duration_seconds": 5.0,
+      "dimensions": [
+        320,
+        180
+      ],
+      "timebase": "1/25"
+    },
+    "frame_delta": 0,
+    "audio": {
+      "start_seconds": 0.0,
+      "end_seconds": 5.013333333333334,
+      "duration_seconds": 5.013333333333334,
+      "decoded_audio_frames": 235,
+      "quiet_windows": []
+    },
+    "audio_scan_status": "completed"
+  },
+  "limits": [
+    "synthetic data only; no real long-video or cost benchmark",
+    "hashes and labels do not prove reviewer identity or actual listening",
+    "Broad coverage, frame uniqueness/end bounds, 4fps execution, speaker/negative-fact semantics, mapping types remain deferred",
+    "Deep protection transfer and non-dialogue audio closure require Direct 2 reconciliation",
+    "external renderers must invoke the entry guard; playback remains unverified"
+  ]
+}

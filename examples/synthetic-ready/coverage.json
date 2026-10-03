@@ -1,0 +1,22 @@
+[
+  {
+    "source_id": "SRC001",
+    "start_ms": 0,
+    "end_ms": 20000,
+    "modality": "visual_sample",
+    "method": "synthetic controlled fixture",
+    "status": "complete",
+    "evidence_file": "synthetic-only",
+    "reason": "fixture for static tests"
+  },
+  {
+    "source_id": "SRC001",
+    "start_ms": 0,
+    "end_ms": 20000,
+    "modality": "transcript",
+    "method": "synthetic controlled fixture",
+    "status": "complete",
+    "evidence_file": "synthetic-only",
+    "reason": "fixture for static tests"
+  }
+]

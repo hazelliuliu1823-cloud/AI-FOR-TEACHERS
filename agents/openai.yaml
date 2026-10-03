@@ -1,0 +1,13 @@
+interface:
+  display_name: 长视频结构化与混剪执行
+  short_description: 长视频先结构化；两次 Director 决策后再执行剪辑与 QA
+  default_prompt: 使用 $long-video-remix：先完成 Broad Structure 的正式文字化观察层与 Content Map，由 Director 确认 Narrative Direction；再做 Directed Deep / Detail Structure 补足画面、原声、上下文、反证和 protected ranges，随真实关键帧与自包含 handoff 交回 Director 确认 Execution Package（计划与制作 reference）；一两个样本锁定全片风格，Execute 落实已确认包，QA 核查 Reference Compliance。保持完整基础观察、稳定 source-time 标签与两次 Direct 边界。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

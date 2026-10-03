@@ -1,0 +1,2 @@
+detail_interval_id,plan_node_id,source_id,episode,start_ms,end_ms,display_range,scene_id,entry_reason,source_of_selection,preceding_context,current_background,following_context,content_summary,target_questions,topic_relevance,frame_window_policy,evidence_refs,unknowns,review_refs
+DI001,P01,SRC001,,0,5000,00:00:00.000-00:00:05.000,S001,rough plan 核心节点，需要确认动作与对白关系,content-map:S001,unknown,unknown,unknown,unknown,Q001,待核实,关键动作节点默认4fps，连续音画用于最终裁决,scene:S001,unknown,none
