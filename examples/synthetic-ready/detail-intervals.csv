@@ -1,2 +1,0 @@
-detail_interval_id,plan_node_id,source_id,episode,start_ms,end_ms,display_range,scene_id,entry_reason,source_of_selection,preceding_context,current_background,following_context,content_summary,target_questions,topic_relevance,frame_window_policy,evidence_refs,unknowns,review_refs
-DI001,P01,SRC001,,0,8000,00:00:00.000-00:00:08.000,S001,P01 complete synthetic scene,content-map:S001,unknown,unknown,unknown,Synthetic expression,Q001,待核实,关键动作节点默认4fps，连续音画用于最终裁决,scene:S001,unknown,none

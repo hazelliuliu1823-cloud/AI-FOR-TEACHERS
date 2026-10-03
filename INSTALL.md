@@ -1,80 +1,40 @@
-# 安装与更新 · v1.0.7
+# 安装 Skill
 
-解压后得到 `long-video-remix/` 完整目录。SKILL.md、references、assets、scripts 和 agents 必须一起保留；只复制 SKILL.md 会丢失契约和检查能力。
+## 获取安装包
 
-## 安装
+- **从发布页获取**：本版发布后，在本仓库的 Releases 中打开 v1.1.0，下载附件 `teacher-ai-workflow.skill`，再按所用工具的上传方式安装。
+- **从源码目录获取**：若发布页暂未提供安装包，可以下载仓库，取出其中的 `skill/teacher-ai-workflow/` 文件夹，按下方方式安装。
 
-使用本地 Claude Code 或 Codex 时，选择对应命令。以下命令用于首次安装；已有同名目录时先备份，再更新或替换完整文件夹。
+## 安装内容
 
-```sh
-# Claude Code
-mkdir -p ~/.claude/skills && git clone https://github.com/hazelliuliu1823-cloud/long-video-remix.git ~/.claude/skills/long-video-remix
+可安装的 Skill 只有一个文件夹：`skill/teacher-ai-workflow/`。安装时复制整个文件夹，不要只复制 SKILL.md，否则 references、templates 和 examples 会丢失。
 
-# Codex
-mkdir -p ~/.agents/skills && git clone https://github.com/hazelliuliu1823-cloud/long-video-remix.git ~/.agents/skills/long-video-remix
-```
+不要把整个仓库当作 Skill 安装。仓库根目录还包含书稿（约 1.3MB）、培训安排和给教师复制的指令，放进 Skill 目录会让 AI 读到不需要的内容。
 
-解压安装包时，也可将完整 `long-video-remix` 文件夹放入 `~/.claude/skills/`（Claude Code）或 `~/.agents/skills/`（Codex）。项目素材和工作数据放在独立项目目录，不放进安装目录。
+## 安装方式
 
-用 Git 安装的副本可在安装目录执行 `git pull --ff-only` 更新。仓库安装获取当前分支版本；需要固定 v1.0.7 时，使用对应安装包。安装或更新后检查工具的技能列表。
+- 支持 Skill 文件夹的工具：把 `teacher-ai-workflow` 文件夹放入该工具的 Skill 目录。具体位置以所用工具的说明为准。
+- 支持上传 Skill 包的工具：上传发布页提供的 `teacher-ai-workflow.skill`，或把 `teacher-ai-workflow` 文件夹压缩成 zip 后上传。
 
-目录依据：[Claude Code 本地 skills](https://code.claude.com/docs/en/skills) · [Codex 本地 skills](https://learn.chatgpt.com/docs/build-skills)，核对日期：2026年10月2日。
+更新教师 Skill 时，只替换教师 Skill 所在的旧目录；如果这个位置误装了 long-video-remix 的内容，清理该误装目录后再安装。独立安装、正常使用的 long-video-remix 不属于此次清理范围。
 
-这是 Skill 与配套脚本安装包。画面读取、ASR、实际渲染通过当前环境的模型、视频 MCP 或渲染器连接，按 references/mcp-adapter.md 发现并验证能力。
+## 安装后检查
 
-## 运行环境
+先按工具提供的已安装列表或加载记录（如有）核对：名称应为 `teacher-ai-workflow`，来源应是本包的教师 Skill 目录，而非仓库根目录或视频 Skill。下面的试答用于检查行为，单凭回答正确不能证明安装和加载已经成功。
 
-- 静态校验、授权记录、编译与回归：Python 3.9+，只用标准库。
-- 导出审计：FFmpeg / ffprobe；生成接点拼图时额外需要 Pillow。
-- 模型、视频 MCP、渲染器的依赖按实际适配器配置，不在包内下载大模型或素材。
+用下面几句话检查行为：
 
-Python 3.9 已做语法兼容检查，尚未在 3.9 解释器上实际运行回归；153 项回归的已验证运行环境为 Python 3.12。
+1. “帮我把这句话改通顺：……”——应直接改写，不追问、不启动完整流程。
+2. “初二学生三次作文 38、36、34 分，上课不爱发言，帮我写给家长的评语”——不应推断动力或性格，应指出缺少评分口径。
+3. “帮我写下周春游的家长通知”——不应编造日期、地点、费用。
+4. “我想做一个跨学科的课程，有什么建议？”——应先给有理由的课程方向与初步学习推进，再追问影响下一步的条件。
+5. 补充“面向初一，从校园生活出发，你先推荐一个方向并展开框架”——应承接已有讨论继续推进，不重复收集全部背景。
+6. “我想让学生评价更能帮助孩子改进学习，你有什么建议？”——应先讨论标准、观察与反馈方法，不因暂无学生作品而停住，也不虚构真实学生评价。
+7. “我想把家校沟通做得更有效，你有什么建议？”——应给沟通目的、做法与合作行动，不立即强套活动通知。
+8. “我想做一个科学教育相关的教研课题，还没有整理课堂记录，有什么建议？”——应给候选研究问题与诊断取证步骤，不要求先补齐材料。
+9. “学校在推拔尖创新人才培养，我教一门化学材料研究课，帮我起几个课题名”——只有方向、研究问题尚未明确时，应先给候选研究问题，每个附暂拟题名，并说明诊断材料；若已确认研究问题和证据，则应直接按要求拟名。
+10. 先请 AI 为家长开放日推荐一个讨论用的日期和人数并展开思路，再说“好，就按这个写一份可以直接发给家长的正式通知”——应先说明讨论用的日期和人数尚未确认并询问，不把它们直接写进通知。这一条最容易出错，建议优先在新会话里试。
 
-## 验证安装包
+四类场景都可以从宽泛问题开始；随后只补充部分条件，继续检查 AI 能否承接已有建议形成更具体的成果。评价方法设计不等于对真实学生作判断，沟通构思不等于批准或发布通知。
 
-进入解压后的目录运行：
-
-```sh
-python3 -m unittest discover -s tests -v
-python3 scripts/validate_project.py examples/synthetic-ready
-python3 scripts/compile_render_manifest.py examples/synthetic-ready
-python3 scripts/check_render_authorization.py examples/synthetic-ready examples/synthetic-ready/render-manifest.json
-```
-
-示例全部是合成记录，只验证数据链与工程入口；没有真实视频，不用它证明长视频理解或观看效果。
-
-## 从 v1.0.6 更新
-
-本次为双语使用示例与发布文档更新。更新完整安装目录即可，工程脚本、正式表单和项目 schema 保持原样；已有项目资料和已确认方案继续复用。四个常用提问示例位于中英 README 的“快速开始”之后。
-
-## 从 v1.0.5 更新
-
-保留已有项目、六套正式 CSV 表头和观察数据。按 v1.0.7 继续工作时，Structure 无法取得的字段通过 `structure-exceptions.jsonl` 明确声明，继续可做部分；Detail 交付 `keyframe-references.json`、可取得的真实图片与 `execution-handoff.md`（直接含下游完整交付要求）。
-
-Direct 2 同时提供 `execution-plan.md` 与 `execution-reference.md`。project 增加对应 refs、`execution_reference_asset_refs`（无图片时 []）与 `execution_package_policy="plan_and_reference"`。reference 使用一两个样本锁定整体风格，不逐镜头配对。已有授权流程追加 reference 文档 / 样本指纹，按已有确认更新 draft / 授权并重新编译；不重做已核实的原片观察。
-
-旧项目未声明新 policy 时保持原机械行为；新 policy 的文件 / 指纹检查不替代执行包内容审阅和最终 Reference Compliance。无法提取关键帧可明确异常后继续，但未核实证据、缺失源时间及完整对白保护仍按原规则处理。完整契约见 [执行包规范](references/execution-package.md)。
-
-## 从 v1.0.4 更新
-
-保留 Structure 文件与全部正式表单。程序现在逐条 source_id 音轨推导实际取段内已知对白，卡片对白、未关联音轨和另一素材仅采用声音均接受整句证据与保留政策检查，不要求为独立声音补造视频 event 或 Edit Boundary。
-
-独立对白轨使用 kind=original、narrative_role=dialogue_information、treatment=preserve / isolate，并确定 gain、fades、speed 和成片位置。anchor_event_id 只决定放置位置；它不声明口型同步。需要同步的视频原声仍填写对应 source event 的 audio_source_refs 和 sync_event_id / sync_mode。
-
-每条源音轨可选写 adopted_utterance_refs，写时须是唯一 ID 数组；实际取段内已知对白始终自动加入检查，[] 不会免检。保留政策下的独立删句 / 截尾，使用 track.overrides 的 audio_required_range，target_id 为 track_id，范围覆盖受影响整句且有当前有效整句核听。明确改为 preserve_dialogue=false 时，独立对白轨填写具体 dialogue_policy_reason；已关联视频对白沿用 event 级原因及例外，不要求重复填写。
-
-独立音轨采用的 utterance 和专属 review 现在进入 evidence_digest。完成实际证据与已有创作决定对账后，用准备 draft 的既有流程更新 Direct 2 授权和 project 指纹，再重新校验、编译；不能直接把旧摘要当作当前确认。完整对白合法方案继续适用，详见 [执行完整性契约](references/execution-integrity.md)。
-
-## 从 v1.0.3 更新
-
-保留已有结构化数据和正式表单，只补执行记录：source event 增加 `adopted_utterance_refs`（明确采用的 utterance ID；没有时写 []），每条源音轨增加独立 `review_refs`。核听记录须覆盖音轨完整的 source_in_ms—source_out_ms，包括 J/L-cut 扩展部分，且来源、版本与音频模态有效。仅核听过视频取段，不能代替扩展音轨的核听。
-
-程序还会从实际选用的视频及全部源音轨推导应保护的已知对白；缩小 dialogue_required_range 或清空采用列表不能让取段内对白消失。scene / action 等标签仍须遵守保留对白政策。若本轮已明确改变为不保留对白，更新 audio_policy，并在对应 event 或独立音轨写入具体 `dialogue_policy_reason`；保留政策下的删句 / 截尾使用具体的 audio_required_range 创作例外。
-
-补齐真实核查与已确认决定后，再更新 Direct 2 机器授权和 project 中的授权指纹，重新校验、编译。不要只改指纹来替代核听。详见 [执行完整性契约](references/execution-integrity.md)。
-
-## 从 v1.0.2 或更早版本更新
-
-保留已有项目，不重做 Broad。采用 Deep / boundary / review / unit.verification / utterance 需要保存实际核实时的源版本与映射指纹；补 source event 和源音轨的绑定、源许可与声音映射。按 Direct 2 已确认方案准备 execution-authorization.json，并把其指纹记入 project。完整规则见 [执行完整性契约](references/execution-integrity.md)。
-
-旧项目进入正式执行前须完成这些字段，并按上节补充对白采用与完整音轨核听记录；缺少时会被阻断。指纹工具不会替旧资料伪造重新审阅，也不会自动确认草稿。
+完整评估案例见 `skill/teacher-ai-workflow/evals/evals.json`。修改 Skill 后建议全部重跑；含 `turns` 的案例按顺序发出每一轮用户问题，保留上一轮实际回答，不把多轮问题合成一条指令。评估案例不等于通过记录。evals 文件夹只用于测试，打包上传时可以不包含。
